@@ -1,0 +1,22 @@
+.btn {
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.btn:hover {
+    background-color: var(--surface-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.btn--primary {
+    background-image: var(--primary-gradient);
+}

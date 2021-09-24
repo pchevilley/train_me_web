@@ -1,0 +1,39 @@
+.landing {
+    display: grid;
+    grid-template-areas: 
+        'empty img'
+        'text img';
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.landing__text {
+    grid-area: text;
+}
+
+.landing__images {
+    grid-area: img;
+    position: relative;
+}
+.landing__images__img {
+    position: absolute;
+    width: 65%;
+    box-shadow: 0 2px 4px rgb(0 0 0);
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+.landing__images__1 {
+    top: -20%;
+}
+.landing__images__2 {
+    left: 20%;
+}
+.landing__text__h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}

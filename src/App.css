@@ -1,0 +1,7 @@
+#root {
+  height: 100%;
+}
+
+.flex-filler {
+  flex: 1;
+}

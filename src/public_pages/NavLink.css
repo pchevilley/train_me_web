@@ -1,0 +1,17 @@
+
+.navlink {
+    font-size: 24px;
+    border-radius: 4px;
+    list-style: none;
+    display: flex;
+}
+
+.navlink:hover {
+    background-color: var(--surface-color);
+}
+
+.navlink__link, .navlink__link:visited {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
