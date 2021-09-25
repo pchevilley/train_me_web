@@ -1,8 +1,12 @@
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 export class Authentication {
-    public login() {}
+    public login(email: string, password: string) {
+        
+    }
+
     public logout() {}
+
     public register(email: string, password: string) {
         const auth = getAuth();
         return createUserWithEmailAndPassword(auth, email, password)

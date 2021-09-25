@@ -1,0 +1,6 @@
+.social-auth {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    margin: 25px;
+}

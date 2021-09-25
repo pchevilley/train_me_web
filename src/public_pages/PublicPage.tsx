@@ -4,6 +4,7 @@ import { Navbar } from './Navbar';
 import { Landing } from './Landing';
 import { AboutPage } from './AboutPage';
 import { RegisterPage } from './RegisterPage';
+import { LoginPage } from './LoginPage';
 
 import {
     BrowserRouter as Router, 
@@ -18,6 +19,7 @@ export function PublicPage() {
             <Switch>
                 <Route path="/about"><AboutPage /></Route>
                 <Route path="/register"><RegisterPage /></Route>
+                <Route path="/login"><LoginPage /></Route>
                 <Route path="/"><Landing /></Route>
             </Switch>
         </div>
