@@ -1,0 +1,52 @@
+.register-page {
+    width: 450px;
+    background: var(--surface-color);
+    padding: 30px 80px;
+    text-align: center;
+    margin: 70px auto auto auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.register-page__title {
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.register-page__social {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    margin: 25px;
+}
+
+.register-page__social__btn {
+    background: white;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+}
+
+.register-page__separator {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    margin: 30px;
+}
+
+.register-page__separator__line {
+    height: 1px;
+    background-color: white;
+    width: 100%;
+}
+.register-page__separator__h2 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.register-page__submit {
+    width: 100%;
+    margin-top: 10px;
+}

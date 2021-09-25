@@ -1,0 +1,13 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-input__input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 5px;
+}

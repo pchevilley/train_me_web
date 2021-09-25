@@ -1,4 +1,4 @@
-type FAStyle = 'duotone'|'light'|'solid';
+type FAStyle = 'duotone'|'light'|'solid'|'brands';
 type IconProps = {
     name: string
     style?: FAStyle
@@ -14,6 +14,8 @@ function _getStyle(style?: FAStyle): string{
             return 'fas';
         case 'duotone':
             return 'fad';
+        case 'brands':
+            return 'fab';
         default:
             return 'fal';        
     }
