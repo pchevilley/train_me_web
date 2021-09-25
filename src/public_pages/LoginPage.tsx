@@ -16,5 +16,12 @@ export function LoginPage() {
 }
 
 function submitForm(email: string, password: string, name?: string) {
-   core.authentication.login(email, password);
+   core.authentication.login(email, password)
+    .then(result => {
+        if (result instanceof Error) {
+            console.error(result);
+        } else {
+            console.log("Login successful", result);
+        }
+    });
 }
