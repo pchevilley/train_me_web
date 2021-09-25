@@ -4,6 +4,8 @@ import { Icon } from '../shared/Icon';
 import { FormInput } from './FormInput';
 import { Button } from '../shared/Button';
 
+import { core } from '../core';
+
 export function RegisterPage() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -27,7 +29,7 @@ export function RegisterPage() {
             <form onSubmit={(e) => submitForm(e, email, password)}>
                 <FormInput label="Name" value={name} onChange={(e) => setName(e.target.value)} />
                 <FormInput label="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                <FormInput label="Password" type="password" value={name} autoComplete="current-password" onChange={(e) => setPassword(e.target.value)} />
+                <FormInput label="Password" type="password" value={password} autoComplete="current-password" onChange={(e) => setPassword(e.target.value)} />
                 <Button className="register-page__submit" type="submit" style="primary" label="Register" />
             </form>
         </div>
@@ -36,6 +38,12 @@ export function RegisterPage() {
 }
 
 function submitForm(event: SyntheticEvent, email: string, password: string) {
-    console.log(email, password);
+    core.authentication.register(email, password).then((result) => {
+        if (result instanceof Error) {
+            console.log(result);
+        } else {
+            // TODO: redirect to user space
+        }
+    });
     event.preventDefault();
 }
