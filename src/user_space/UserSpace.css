@@ -1,0 +1,6 @@
+.user-space {
+    display: grid;
+    grid-template-areas: "appbar content";
+    grid-template-columns: auto 1fr;
+    height: 100%;
+}

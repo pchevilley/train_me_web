@@ -1,0 +1,30 @@
+.app-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface-color);
+    width: 70px;
+    z-index: 10;
+}
+
+.app-bar__extension {
+    position: absolute;
+    left: 70px;
+    background: var(--surface-color);
+    height: 100%;
+    padding-right: 20px;
+    transition: all .2s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.app-bar__extension--visible {
+    transform: translateX(0);
+}
+
+.app-bar__extension div {
+    height: 70px;
+    display: grid;
+    align-content: center;
+    padding-right: 10px;
+    box-sizing: border-box;
+}

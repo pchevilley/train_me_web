@@ -1,0 +1,12 @@
+.app-bar-button {
+    height: 70px;
+    font-size: 20px;
+    background-color: var(--surface-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.app-bar-button:hover {
+    background-color: #2E3B4E;
+}
