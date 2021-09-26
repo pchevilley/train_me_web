@@ -10,7 +10,7 @@
     text-align: left;
 }
 .app-bar-button svg {
-    width: 20px;
+    width: 25px!important;
 }
 .app-bar-button span {
     margin-left: 30px;
