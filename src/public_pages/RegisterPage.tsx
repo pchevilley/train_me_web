@@ -4,11 +4,23 @@ import { AuthFormContainer } from './Authentication/AuthFormContainer';
 import { SocialAuth } from './Authentication/SocialAuth';
 import { AuthSeparator } from './Authentication/AuthSeparator';
 import { AuthForm } from './Authentication/AuthForm';
-
-import { core } from '../core';
+import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import { core } from '../core';
 
 export function RegisterPage() {
+    const history = useHistory();
+        
+    function submitForm(email: string, password: string, name?: string) {
+        core.authentication.register(email, password).then((result) => {
+            if (result instanceof Error) {
+                console.log(result);
+            } else {
+                history.push('/user_space');
+            }
+        });
+    }
+
     return (
         <AuthFormContainer title="Sign up to Train Me">
             <SocialAuth />
@@ -20,14 +32,4 @@ export function RegisterPage() {
             </p>
         </AuthFormContainer>
     );
-}
-
-function submitForm(email: string, password: string, name?: string) {
-    core.authentication.register(email, password).then((result) => {
-        if (result instanceof Error) {
-            console.log(result);
-        } else {
-            // TODO: redirect to user space
-        }
-    });
 }
