@@ -5,6 +5,15 @@
     border: none;
     color: var(--text-color);
     cursor: pointer;
+    white-space: nowrap;
+    padding-left: 25px;
+    text-align: left;
+}
+.app-bar-button svg {
+    width: 20px;
+}
+.app-bar-button span {
+    margin-left: 30px;
 }
 
 .app-bar-button:hover {
