@@ -1,13 +1,13 @@
 import './Navbar.css';
-import appLogo from '../assets/app-logo.svg';
+import appLogo from '../../assets/app-logo.svg';
 
 import { NavLink } from './NavLink';
-import { Button } from '../shared/Button';
+import { Button } from '../../shared/Button';
 
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function Navbar() {
-    const history = useHistory();
+    const navigate = useNavigate();
     return (
         <nav className="navbar">
             <img src={appLogo} alt="" />
@@ -22,7 +22,7 @@ export function Navbar() {
                 className="navbar__login" 
                 label="Register" 
                 style="primary" 
-                onClick={() => { history.push('/register') }}/>
+                onClick={() => { navigate('/register') }}/>
         </nav>
     );
 }

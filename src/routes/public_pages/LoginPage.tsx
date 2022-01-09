@@ -2,12 +2,12 @@ import { AuthFormContainer } from './Authentication/AuthFormContainer';
 import { SocialAuth } from './Authentication/SocialAuth';
 import { AuthSeparator } from './Authentication/AuthSeparator';
 import { AuthForm } from './Authentication/AuthForm';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import { core } from '../core';
+import { core } from '../../core';
 
 export function LoginPage() {
-    const history = useHistory();
+    const navigate = useNavigate();
 
     function submitForm(email: string, password: string) {
         core.authentication.login(email, password)
@@ -15,7 +15,7 @@ export function LoginPage() {
                 if (result instanceof Error) {
                     console.error(result);
                 } else {
-                    history.push('/user_space');
+                    navigate('/u');
                 }
             });
     }

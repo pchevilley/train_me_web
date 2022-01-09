@@ -1,5 +1,5 @@
 import './Landing.css';
-import img from '../assets/app-screenshot.svg';
+import img from '../../assets/app-screenshot.svg';
 
 export function Landing() {
     return <section className="landing">

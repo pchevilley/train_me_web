@@ -1,5 +1,5 @@
 import './AppBarButton.css';
-import { Icon } from '../shared/Icon';
+import { Icon } from '../../shared/Icon';
 
 type AppBarButtonProps = {
     icon: string

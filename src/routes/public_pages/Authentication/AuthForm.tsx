@@ -1,7 +1,7 @@
 import './AuthForm.css';
 import { useState } from 'react';
 import { FormInput } from '../FormInput';
-import { Button } from '../../shared/Button';
+import { Button } from '../../../shared/Button';
 
 type AuthFormProps = {
     showName?: boolean

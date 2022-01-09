@@ -1,5 +1,5 @@
 import './SocialButton.css';
-import { Icon } from '../../shared/Icon';
+import { Icon } from '../../../shared/Icon';
 import { SyntheticEvent } from 'react';
 
 type SocialButtonProps = {
