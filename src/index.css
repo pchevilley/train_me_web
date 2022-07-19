@@ -14,9 +14,13 @@ body {
 
   --background-color: #2A3851;
   --surface-color: #344359;
+  --on-surface-color: white;
+  --on-surface-color--dimmed: rgb(202, 202, 202);
   --text-color: white;
 
   --primary-gradient: linear-gradient(to right, #E7536B 0%, #EE895B 70%, #F5B94D 100%);
+  --primary-color: #E7536B;
+  --secondary-color: #F5B94D;
 
   background-color: var(--background-color);
   color: var(--text-color);
@@ -25,4 +29,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flex-filler {
+  flex: 1;
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

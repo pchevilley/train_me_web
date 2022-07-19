@@ -15,7 +15,7 @@ export function Button(props: ButtonProps) {
         <button 
             onClick={props.onClick}
             type={props.type || 'button'}
-            className={`btn ${_getStyleClass(props.style)} ${props.className}`}>
+            className={`btn ${_getStyleClass(props.style)} ${props.className || ''}`}>
                 {props.label}
         </button>
     );

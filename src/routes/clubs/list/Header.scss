@@ -1,0 +1,19 @@
+.club-list__header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 20px 0;
+}
+
+.club-list__header__button {
+    background-color: transparent;
+
+    &:hover {
+        background-color: var(--surface-color);
+    }
+}
+
+.club-list__header__title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 100;
+}

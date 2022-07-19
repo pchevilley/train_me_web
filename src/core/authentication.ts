@@ -6,10 +6,7 @@ export class Authentication {
         const auth = getAuth();
 
         return signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-                return user;
-            })
+            .then((userCredential) => userCredential.user)
             .catch((error) => {
                 return error;
             });
@@ -20,11 +17,7 @@ export class Authentication {
     public register(email: string, password: string) {
         const auth = getAuth();
         return createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-                console.log(user);
-                return user;
-            })
+            .then((userCredential) => userCredential.user)
             .catch((error) => {
                 console.error(error);
                 return error;
