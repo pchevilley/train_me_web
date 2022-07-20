@@ -1,0 +1,48 @@
+.create-club-form {
+    display: grid;
+    grid-template-areas: 
+        "name           name"
+        "email          phone"
+        "location       price"
+        "description    description"
+        "empty          submit";
+        grid-gap: 15px;
+} 
+
+.create-club-form__label {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.create-club-form__input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.create-club-form__name {
+    grid-area: name;
+}
+.create-club-form__email {
+    grid-area: email;
+}
+.create-club-form__phone {
+    grid-area: phone;
+}
+.create-club-form__location {
+    grid-area: location;
+}
+.create-club-form__price {
+    grid-area: price;
+}
+.create-club-form__description {
+    grid-area: description;
+}
+.create-club-form__description .create-club-form__input {
+    min-height: 120px;
+}
+
+.create-club-form__submit {
+    grid-area: submit;
+    border-radius: 50px;
+}

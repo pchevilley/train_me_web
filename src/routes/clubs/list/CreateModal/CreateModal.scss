@@ -1,0 +1,32 @@
+.create-club-modal {
+    display: flex;
+}
+.create-club-modal__presentation {
+    display: grid;
+    align-items: center;
+}
+.create-club-pill {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 15px;
+    padding: 10px;
+}
+.create-club-pill__circle {
+    border-radius: 100%;    
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    font-size: 45px;
+}
+
+.create-club-pill__description__title {
+    margin: 0;
+}
+
+.create-club-pill__description__description {
+    margin: 2px 0;
+}
+

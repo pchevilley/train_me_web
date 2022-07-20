@@ -1,4 +1,7 @@
 .club-list {
+    display: grid;
+    grid-template-columns: 1fr 0;
+    transition: all .3s;
     padding: 15px 45px;
 }
 
