@@ -2,10 +2,12 @@ type FAStyle = 'duotone'|'light'|'solid'|'brands';
 type IconProps = {
     name: string
     style?: FAStyle
+    onClick?: () => void
+    className?: string
 };
 
 export function Icon(props: IconProps) {
-    return <span className={`fa-${props.name} ${_getStyle(props.style)}`}></span>;
+    return <span onClick={props.onClick} className={`fa-${props.name} ${_getStyle(props.style)} ${props.className ?? "" }`}></span>;
 }
 
 function _getStyle(style?: FAStyle): string{

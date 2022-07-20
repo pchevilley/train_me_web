@@ -20,3 +20,13 @@
 .btn--primary {
     background-image: var(--primary-gradient);
 }
+
+.btn--icon {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn--icon:active, .btn--icon:hover {
+    box-shadow: none;
+    color: var(--primary-color)
+}

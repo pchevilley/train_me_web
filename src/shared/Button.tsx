@@ -1,6 +1,7 @@
 import './Button.css';
+import { Icon } from './Icon';
 
-type ButtonStyle = 'primary';
+type ButtonStyle = 'primary'|'icon';
 type ButtonProps = {
     className?: string
     style?: ButtonStyle
@@ -17,6 +18,7 @@ export function Button(props: ButtonProps) {
             type={props.type || 'button'}
             className={`btn ${_getStyleClass(props.style)} ${props.className || ''}`}>
                 {props.label}
+                {props.icon && <Icon name={props.icon} />}
         </button>
     );
 };

@@ -29,7 +29,7 @@ function ModalMgr(props: { modal: string, onClose: () => void }) {
   const { modal, onClose } = props;
 
   if (modal) {
-    return <Modal onClose={onClose} open={true}>
+    return <Modal onClose={onClose} open={true} title="Create a club">
         <CreateModal />
     </Modal>;
   }
