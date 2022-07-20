@@ -23,7 +23,7 @@ export function Modal(props: PropsWithChildren<{
     }
 
     return <div onClick={close} className={"modal " + (isVisible ? "modal--visible" : "")}>
-        <div onClick={e => {console.log('coucou'); e.stopPropagation()}} className="modal__content">
+        <div onClick={e => e.stopPropagation()} className="modal__content">
             <Button style="icon" icon="times" onClick={close} className="modal__content__closeIcon"/>
             {title && <h2 className="modal__content__title">{title}</h2>}
             {children}
