@@ -24,9 +24,26 @@
 .btn--icon {
     background: transparent;
     box-shadow: none;
+
+    &:active, &:hover {
+        box-shadow: none;
+        color: var(--primary-color)
+    }
 }
 
-.btn--icon:active, .btn--icon:hover {
-    box-shadow: none;
-    color: var(--primary-color)
+.btn--link {
+    color: var(--primary-color);
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+
+    &:active, &:hover {
+        box-shadow: none;
+        text-decoration: underline;
+        background: transparent;
+    }
+
+    &:active {
+        color: white;
+    }
 }

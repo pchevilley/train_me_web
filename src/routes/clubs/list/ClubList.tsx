@@ -16,7 +16,7 @@ export function ClubList() {
       <div className="club-list__body">
         <Header onCreateClub={() => setCurrentModal("create")} />
         <Filters />
-        <Results />
+        <Results onCreateClub={() => setCurrentModal("create")} />
       </div>
       <div className="club-list__panel"></div>
 

@@ -1,7 +1,7 @@
-import './Button.css';
+import './Button.scss';
 import { Icon } from './Icon';
 
-type ButtonStyle = 'primary'|'icon';
+type ButtonStyle = 'primary'|'icon'|'link';
 type ButtonProps = {
     className?: string
     style?: ButtonStyle
