@@ -21,7 +21,7 @@ export function Navbar() {
             <Button 
                 className="navbar__login" 
                 label="Register" 
-                style="primary" 
+                btnStyle="primary" 
                 onClick={() => { navigate('/register') }}/>
         </nav>
     );

@@ -17,5 +17,5 @@
 }
 
 .app-bar-button:hover {
-    background-color: #2E3B4E;
+    background-color: var(--surface-color--hover);
 }

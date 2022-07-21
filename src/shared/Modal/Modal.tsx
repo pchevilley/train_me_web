@@ -1,6 +1,5 @@
-import { PropsWithChildren, useCallback, useEffect, useState } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 import { Button } from "../Button";
-import { Icon } from "../Icon";
 import "./Modal.scss";
 
 export function Modal(props: PropsWithChildren<{
@@ -8,7 +7,7 @@ export function Modal(props: PropsWithChildren<{
     open: boolean
     onClose: () => void
 }>) {
-    const {children, open, onClose, title} = props;
+    const {children, onClose, title} = props;
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -24,7 +23,7 @@ export function Modal(props: PropsWithChildren<{
 
     return <div onClick={close} className={"modal " + (isVisible ? "modal--visible" : "")}>
         <div onClick={e => e.stopPropagation()} className="modal__content">
-            <Button style="icon" icon="times" onClick={close} className="modal__content__closeIcon"/>
+            <Button btnStyle="icon" icon="times" onClick={close} className="modal__content__closeIcon"/>
             {title && <h2 className="modal__content__title">{title}</h2>}
             {children}
         </div>

@@ -10,7 +10,7 @@ type SocialButtonProps = {
 export function SocialButton(props: SocialButtonProps) {
     return (
         <button className="social-button" onClick={props.onClick}>
-            <Icon name={props.icon} style="brands"></Icon>
+            <Icon name={props.icon} faStyle="brands"></Icon>
         </button>
     );
 };

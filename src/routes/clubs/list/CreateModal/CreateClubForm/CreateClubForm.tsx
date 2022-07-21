@@ -45,7 +45,7 @@ export function CreateClubForm() {
         <textarea {...register("description")} className="create-club-form__input" />
       </label>
 
-      <Button label="Create" style="primary" type="submit" className="create-club-form__submit"/>
+      <Button label="Create" btnStyle="primary" type="submit" className="create-club-form__submit"/>
     </form>
   );
 }

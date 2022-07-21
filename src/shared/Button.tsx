@@ -4,7 +4,7 @@ import { Icon } from './Icon';
 type ButtonStyle = 'primary'|'icon'|'link';
 type ButtonProps = {
     className?: string
-    style?: ButtonStyle
+    btnStyle?: ButtonStyle
     label?: string
     icon?: string
     type?: 'submit'|'button'
@@ -16,7 +16,7 @@ export function Button(props: ButtonProps) {
         <button 
             onClick={props.onClick}
             type={props.type || 'button'}
-            className={`btn ${_getStyleClass(props.style)} ${props.className || ''}`}>
+            className={`btn ${_getStyleClass(props.btnStyle)} ${props.className || ''}`}>
                 {props.label}
                 {props.icon && <Icon name={props.icon} />}
         </button>

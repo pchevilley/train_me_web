@@ -1,0 +1,55 @@
+.club-list__results {
+    width: 100%;
+    border-spacing: 0;
+    border-spacing: 0 10px;
+}
+
+
+.club-list__results__location-header {
+    text-align: left;
+}
+.club-list__results__members-header {
+    text-align: left;
+}
+.club-list__results__price-header {
+    text-align: right;
+}
+.club-list__results__registrations-header {
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+.club-list__results__item {
+    background-color: var(--surface-color);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--surface-color--hover);
+    }
+}
+.club-list__results__item--selected {
+    background: var(--primary-gradient);
+}
+
+.club-list__results__item__image-td {
+    border-radius: 10px 0 0 10px;
+    width: 110px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 20px;
+}
+.club-list__results__item__image {
+    border-radius: 100%;
+    height: 90px;
+    width: 90px;
+}
+.club-list__results__item__price {
+    text-align: right;
+}
+.club-list__results__item__registrations {
+    text-align: right;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+}
+

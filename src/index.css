@@ -14,6 +14,7 @@ body {
 
   --background-color: #2A3851;
   --surface-color: #344359;
+  --surface-color--hover: #2E3B4E;
   --on-surface-color: white;
   --on-surface-color--dimmed: rgb(202, 202, 202);
   --text-color: white;

@@ -1,4 +1,3 @@
-import { Button } from '../../../../shared/Button';
 import { Icon } from '../../../../shared/Icon';
 import { CreateClubForm } from './CreateClubForm';
 import './CreateModal.scss';

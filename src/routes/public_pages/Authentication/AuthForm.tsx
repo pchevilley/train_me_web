@@ -24,7 +24,7 @@ export function AuthForm(props: AuthFormProps) {
             }
             <FormInput label="Email" value={email} required={true} onChange={(e) => setEmail(e.target.value)} />
             <FormInput label="Password" type="password" required={true} value={password} autoComplete="current-password" onChange={(e) => setPassword(e.target.value)} />
-            <Button className="auth-form__submit" type="submit" style="primary" label={props.submitLabel} />
+            <Button className="auth-form__submit" type="submit" btnStyle="primary" label={props.submitLabel} />
         </form>
     );
 }
