@@ -7,6 +7,7 @@ import { Modal } from "../../../shared/Modal";
 
 import "./ClubList.css";
 import { CreateModal } from "./CreateModal";
+import { SelectedPanel } from "./SelectedPanel/SelectedPanel";
 
 
 const CLUBS_MOCKS: Club[] = [
@@ -59,7 +60,7 @@ export function ClubList() {
         <Filters />
         <Results onSelectClub={c => setSelectedClub(c)} selectedClub={selectedClub} results={results} onCreateClub={() => setCurrentModal("create")} />
       </div>
-      <div className="club-list__panel"></div>
+      <div className="club-list__panel">{<SelectedPanel club={selectedClub} />}</div>
 
       <ModalMgr modal={currentModal} onClose={() => setCurrentModal("")} />
     </section>

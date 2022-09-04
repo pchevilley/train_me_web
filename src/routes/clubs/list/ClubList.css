@@ -1,17 +1,14 @@
 .club-list {
     display: grid;
-    grid-template-columns: 1fr 0;
+    grid-template-columns: 1fr auto;
     transition: all .3s;
-    padding: 15px 45px;
+    padding: 45px;
+    grid-gap: 45px;
 }
 
 .club-list__body {
     display: grid;
     grid-template-rows: auto auto 1fr;
     height: 100%;
-}
-
-.club-list__results {
-    align-self: center;
-    justify-self: center;
+    gap: 25px;
 }

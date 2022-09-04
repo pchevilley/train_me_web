@@ -1,0 +1,39 @@
+.selected-panel {
+    transition: all .3s;
+    width: 0px;
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    opacity: 0;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.selected-panel--visible {
+    opacity: 1;
+    width: 260px;
+}
+
+.selected-panel__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.selected-panel__content {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .selected-panel--visible {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .selected-panel--visible {
+        width: 420px;
+    }
+}
