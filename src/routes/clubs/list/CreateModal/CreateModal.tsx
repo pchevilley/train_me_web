@@ -29,7 +29,7 @@ export function CreateModal() {
     return <div className="create-club-modal">
         <div className="create-club-modal__presentation">
             {
-                pills.map(p => <CreateClubPresentationPill {...p}/>)
+                pills.map(p => <CreateClubPresentationPill key={p.title} {...p}/>)
             }
             
         </div>
